@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+  .button-effect{
+    @apply transition-all duration-300 outline-none border-none hover:translate-y-1 hover:scale-110;
+  }
+}
+@layer base{
+  h2{
+    @apply font-bold text-lg;
+  }
+}
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
